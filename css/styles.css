@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background: url("https://wallpaperaccess.com/full/3850768.jpg");
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    text-decoration-color: rgb(8, 8, 8);
+}
+.container{
+    margin: auto;
+    padding: 2%;
+    margin-left: 17px;
+    /* overflow: hidden; */
+    /* border: 2px solid blue; */
+}
+.box{
+    /* background-color: rgb(178, 239, 171); */
+    background-color: rgb(183, 218, 206);
+    border: 2px solid black;
+    position: relative;
+    float: left;
+    margin-bottom: 19px;
+    overflow: hidden;
+}
+.tile{
+   text-align: center;
+   width: 25%;
+   height: 25px;
+   /* padding-top: 3px; */
+   position:absolute;
+   top: 0;
+   right: 0;
+   border-bottom: 2px solid black;
+   border-left: 2px solid black;
+}
+.norm_para{
+    margin:30px 7px 10px 7px;
+}
+#tile1{
+    background-color: rgba(98, 41, 151, 0.6);
+}
+#tile2{
+    background-color:rgba(98, 41, 151, 0.6);
+}
+#tile3{
+    background-color: rgba(98, 41, 151, 0.6);
+}
+#tile1:hover{
+   background-color: rgb(50, 16, 83); 
+   color: rgb(233, 240, 248);
+}
+#tile2:hover{
+   background-color: rgb(50, 16, 83);
+   color: rgb(233, 240, 248);
+}
+#tile3:hover{
+   background-color: rgb(50, 16, 83);
+   color: rgb(233, 240, 248);
+}
+#box-1:hover{
+    background-color: rgb(134, 192, 172);
+}
+#box-2:hover{
+    background-color: rgb(134, 192, 172);
+}
+#box-3:hover{
+    background-color: rgb(134, 192, 172);
+}
+@media (width >= 992px) {
+    .box{
+        width: 32%;
+    }
+    #box-1, #box-2{
+        margin-right: 11px;
+    }
+}
+@media (768px <= width <= 991px)
+{
+    .box{     
+        width: 47.2%;
+        margin-left: 8px;
+    }
+    #box-3{
+        width: 97%;
+    }
+    #box-1{
+        margin-right: 11px;
+    }
+}
+@media (width <= 767px){
+    .box{
+        width: 100%;
+    }
+    .container{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
